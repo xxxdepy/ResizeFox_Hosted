@@ -1,0 +1,19 @@
+{
+  "name": "ResizeFox",
+  "description": "Want to resize photos on your Firefox Device? This App can help you! Small and simple app to resize photos.",
+  "launch_path": "/index.html",
+  "type": "privileged",
+  "icons": {
+    "128": "/images/icon-128.png",
+    "512": "/images/icon-512.png"
+  },
+  "developer": {
+    "name": "Deepak Kamat",
+    "url": "http://www.stramaxon.com/"
+  },
+  "permissions": {
+    "device-storage:pictures" : {
+      "description": "To retrieve images from device to resize."
+    }
+  }
+}

@@ -1,0 +1,129 @@
+/* || basic set up + sizing for containers */
+
+html, body {
+  margin: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  font-family: 'Open Sans', Helvetica, arial, sans-serif;
+  background-color: #666;
+}
+
+body {
+  width: 100%;
+  margin:0 auto;
+  height: inherit;
+  color:#fff;
+
+  position:relative;
+}
+
+body .inner {
+  max-width:480px;
+  margin:0 auto;
+  padding:5px;
+
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+
+body img {
+  max-width:100%;
+  height:auto;
+}
+
+* {
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+/* HEADER */
+.top-header {
+  background-color:rgba(0,0,0,0.8);
+  margin-bottom:10px;
+  border:1px solid rgba(255,255,255,0.2);
+  box-shadow:0 2px 6px rgba(0,0,0,0.4);
+  
+  position:fixed;
+  top:0;left:0;right:0;
+}
+
+.top-header h1 {
+  font-size:1.2em;
+  margin:0;
+  font-weight:300;
+  text-align:center;
+}
+
+/* Main */
+
+#image-container .image-view img {
+  width:80%;
+  margin: 0 auto;
+  display:block;
+  
+  box-shadow:2px 2px 5px rgba(0,0,0,.2);
+}
+
+#image-container .image-name {
+  margin:10px auto;
+  text-align:center;
+  font-size:12px;
+  color:#eee;
+}
+#image-container .image-name span {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#image-container .image-name span {
+  display:inline-block;
+  background-color:rgba(0,0,0,0.5);
+  
+  padding:5px 20px;
+  border-radius:20px;
+}
+
+/* Menu */
+#bottom-menu {
+  background-color:rgba(0,0,0,0.8);
+  position:fixed;
+  bottom:0;
+  left:0;right:0;
+  
+  box-shadow:0 -5px 10px rgba(0,0,0,0.3);
+}
+
+#bottom-menu .menu-items ul {
+  padding:0 5px;
+  margin:0;
+}
+
+#bottom-menu .menu-items ul li {
+  display:inline-block;
+  text-align:center;
+  
+  margin-right:10px;
+  padding:5px 15px;
+  background-color:rgba(255,255,255,0.1);
+  border-radius:20px;
+}
+
+#bottom-menu .menu-items ul li .menu-icon {
+  width:16px;
+  margin:5px;
+  display:inline-block;
+  vertical-align:middle;
+}
+#bottom-menu .menu-items ul li .menu-icon {
+  display:inline-block;
+  line-height:0;
+}
+
+
+
