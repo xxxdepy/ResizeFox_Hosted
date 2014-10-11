@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>ResizeFox</title>
+  <link rel="icon" type="image/png" href="images/icon-128.png">
+  <meta name="viewport" content="width=device-width"> 
+   
+  <link href="style/normalize.css" type="text/css" rel="stylesheet"> 
+  <link href="style/animate.css" type="text/css" rel="stylesheet">
+  <link href="style/style.css" type="text/css" rel="stylesheet">
+
+  <!-- Load Feather code -->
+<!-- <script type="text/javascript" src="http://feather.aviary.com/js/feather.js"></script> -->
+
+<!-- Instantiate Feather -->
+<script type='text/javascript'>
+   var featherEditor = new Aviary.Feather({
+       apiKey: 'your-key-here',
+       apiVersion: 3,
+       theme: 'light', // Check out our new 'light' and 'dark' themes!
+       tools: 'all',
+       appendTo: '',
+       onSave: function(imageID, newURL) {
+           var img = document.getElementById(imageID);
+           img.src = newURL;
+       },
+       onError: function(errorObj) {
+           alert(errorObj.message);
+       }
+   });
+
+   function launchEditor(id, src) {
+       featherEditor.launch({
+           image: id,
+           url: src
+       });
+      return false;
+   }
+</script>
+
+
+
+</head>
+
+<!-- 
+Aviary App name : ResizeFox
+       Key      : 25c432f819574e48
+       Secret   : 2b7f8a939c658fcc
+
+
+-->
+
+
+<body>
+	<header class='top-header'>
+      <div class='inner'>
+		    <h1>ResizeFox</h1>
+      </div>
+	</header>
+
+	<section id='image-container'>
+
+    <div class='inner'>
+      <div class='image-name'>
+          <span>No image selected.</span>
+      </div>
+      <div class='image-view'>
+	        <img class='image' src='images/img-default.jpg'/>
+      </div>
+    </div>
+  </section>
+
+  <div class='false-height'>
+  </div>
+
+  <div style='display:none;'>
+    <input type='file' name='resizeImage' id='img_selected' accept='images/*'/>
+  </div>
+
+  <section id='bottom-menu'>
+    <div class='inner'>
+      <nav class='menu-items'>
+        <ul>
+        <li class='select-img menu-item'>
+          <div class='menu-icon'><img src='images/img-icon.png'></div>
+          <span>Select Image</span>
+        </li>
+        <li class='img-resize menu-item'>
+          <div class='menu-icon'><img src='images/resize-icon.png'></div>
+          <span>Resize</span>
+        </li>
+      </ul>
+      </nav>
+    </div>
+  </section>
+</div>
+  
+</body>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/main.js"></script>
+
+</html>
