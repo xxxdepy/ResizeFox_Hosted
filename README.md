@@ -1,4 +1,4 @@
-battery-quickstart-starter-template
+Image Resize App
 ===================================
 
-The starting state of the example built up in the "Your first app" tutorial found in the Mozilla Developer Network [open web app Quickstart](https://developer.mozilla.org/en-US/Apps/Quickstart#Your_first_app) article.
+Image resize app for Firefox OS -- not completely developed.
